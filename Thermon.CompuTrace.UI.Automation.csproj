@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\Circuit.Design.Reference\**" />
+    <Compile Remove="Features\Circuit\**" />
+    <Compile Remove="Features\CreateProject\**" />
+    <Compile Remove="Features\InputData\**" />
+    <EmbeddedResource Remove="Features\Circuit.Design.Reference\**" />
+    <EmbeddedResource Remove="Features\Circuit\**" />
+    <EmbeddedResource Remove="Features\CreateProject\**" />
+    <EmbeddedResource Remove="Features\InputData\**" />
+    <None Remove="Features\Circuit.Design.Reference\**" />
+    <None Remove="Features\Circuit\**" />
+    <None Remove="Features\CreateProject\**" />
+    <None Remove="Features\InputData\**" />
+    <SpecFlowFeatureFiles Remove="Features\Circuit.Design.Reference\**" />
+    <SpecFlowFeatureFiles Remove="Features\Circuit\**" />
+    <SpecFlowFeatureFiles Remove="Features\CreateProject\**" />
+    <SpecFlowFeatureFiles Remove="Features\InputData\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\Circuit.Design.Reference\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\Circuit\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\CreateProject\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\InputData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.0" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="Gherkin" Version="26.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="Perfolizer" Version="0.3.4" />
+    <PackageReference Include="Selenium.Support" Version="4.9.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.9.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="115.0.5790.17000" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
+    <PackageReference Include="WebDriverManager" Version="2.16.2" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.assert" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
